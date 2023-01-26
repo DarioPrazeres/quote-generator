@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import { useState } from 'react';
 import RandomButton from './components/RandomButton';
-import './App.css';
+import Quote from './components/Quote';
 
 const ContContext = createContext();
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
     <ContContext.Provider value={{ cont, setCont }}>
       <div className="App">
         <RandomButton cont={cont} setCont={setCont} />
-        <h1>Dario Edgar Prazeres</h1>
+        <Quote/>
       </div>
     </ContContext.Provider>
   );

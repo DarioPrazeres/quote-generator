@@ -4,13 +4,13 @@ import { useContext } from "react";
 import { ContContext } from "../App";
 
 export default function RandomButton(){
-    const {cont, setCont} = useContext(ContContext);
+    const { setCont} = useContext(ContContext);
     return (
         <button className="btn-random" onClick={()=>{  
           setCont((c)=> c = numberRandom())
-          //display('text');
+          display('text');
         }}>
-            <p>random {cont}</p>
+            <p>random</p>
             <img className="iconUpdate" src={updateIcon} alt="icon of update"/>
         </button>
     )
