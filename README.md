@@ -59,7 +59,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/DarioPrazeres/windbnb
+$ git clone https://github.com/DarioPrazeres/quote-generator
 
 # Install dependencies
 $ npm install
