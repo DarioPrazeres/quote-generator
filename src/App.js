@@ -5,9 +5,7 @@ import Quote from './components/Quote';
 
 const ContContext = createContext();
 export default function App() {
-
   const [cont, setCont] = useState(0);
-  console.log(cont)
   return (
     <ContContext.Provider value={{ cont, setCont }}>
       <div className="App">

@@ -16,7 +16,6 @@ export default function Quote() {
     function nameAuthor() {
         data && data.map((e, i) => {
             if (i === cont) {
-                console.log(e.author)
                 setAuthor((a)=> a=e.author);
             }
         })
