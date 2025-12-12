@@ -9,7 +9,7 @@ import { display } from "./RandomButton";
 export default function Quote() {
     const {cont} = useContext(ContContext);
     const [author, setAuthor] = useState('');
-    const [data] = useFetch('https://type.fit/api/quotes');
+    const [data] = useFetch('https://api.api-ninjas.com/v2/quotes?category=love');
     useEffect(() => {
         nameAuthor();
     }, [author])
@@ -27,7 +27,7 @@ export default function Quote() {
                     if (i === cont) {
                         return (
                             <div key={i} className="main">
-                                <TextQuote text={e.text} />
+                                <TextQuote text={e.quote} />
                                 <div className="authorQuote" onClick={() => {
                                     nameAuthor();
                                     display('texts')
